@@ -1,0 +1,13 @@
+@import "../dist/webkit-sassui-video-play.scss";
+.bdgn{
+  border:none;
+  background: none;
+}
+.test-webkit-sassui-video-play{
+  border:1px solid red;
+  position: relative;
+  img{
+    vertical-align: top;
+    width: 100%;
+  }
+}

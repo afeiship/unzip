@@ -1,0 +1,42 @@
+/*webkit-sassui-video-play Start*/
+.webkit-sassui-video-play, .webkit-sassui-video-play:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.webkit-sassui-video-play {
+  font-size: 10px;
+  border: 1px #ffffff solid;
+  border-radius: 50%;
+  height: 4.6em;
+  width: 4.6em;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.webkit-sassui-video-play:after {
+  content: "";
+  width: 0;
+  height: 0;
+  left: 55%;
+  border-style: solid;
+  border-color: transparent transparent transparent #ffffff;
+  border-width: 0.9em 0 0.9em 1.56em;
+}
+
+/*webkit-sassui-video-play End*/
+.bdgn {
+  border: none;
+  background: none;
+}
+
+.test-webkit-sassui-video-play {
+  border: 1px solid red;
+  position: relative;
+}
+
+.test-webkit-sassui-video-play img {
+  vertical-align: top;
+  width: 100%;
+}
