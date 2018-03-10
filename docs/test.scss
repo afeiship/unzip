@@ -8,9 +8,20 @@
 .f14{
   font-size: 14px;
 }
+.abs-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .test-webkit-sassui-video-play{
   border:1px solid red;
   position: relative;
+
+  .webkit-sassui-video-play{
+    @extend .abs-center;
+  }
+
   img{
     vertical-align: top;
     width: 100%;
