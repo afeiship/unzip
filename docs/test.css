@@ -2,11 +2,23 @@
 .webkit-sassui-video-play {
   position: absolute;
   font-size: 10px;
-  border: 1px #ffffff solid;
   border-radius: 50%;
   height: 4.6em;
   width: 4.6em;
   background-color: rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.webkit-sassui-video-play, .webkit-sassui-video-play[data-border=true] {
+  border: 1px #ffffff solid;
+}
+
+.webkit-sassui-video-play[data-border=false] {
+  border: none;
+}
+
+.webkit-sassui-video-play:active {
+  opacity: 0.8;
 }
 
 .webkit-sassui-video-play:after {
