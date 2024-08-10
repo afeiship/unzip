@@ -1,6 +1,6 @@
 {
   "name": "@jswork/unzip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "unzip tools based on zip-lib.",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
@@ -33,5 +33,10 @@
   },
   "dependencies": {
     "zip-lib": "^1.0.4"
-  }
+  },
+  "keywords": [
+    "unzip",
+    "zip",
+    "zip-lib"
+  ]
 }

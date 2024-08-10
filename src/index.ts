@@ -14,9 +14,7 @@ const unzip = (inOptions: UnzipOptions) => {
     ...zlOptions,
   });
 
-  return new Promise((resolve, reject) => {
-    unzip.extract(source, target).then(resolve, reject);
-  });
+  return unzip.extract(source, target);
 };
 
 export default unzip;
