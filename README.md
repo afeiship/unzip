@@ -15,12 +15,10 @@ npm install @jswork/unzip
 ```js
 import unzip from '@jswork/unzip';
 
-// usage goes here.
-```
-
-## types
-```ts
-/// <reference types="@jswork/unzip/global.d.ts" />
+await unzip({
+  source: '__tests__/dist.zip',
+  target: '__tests__/test123'
+});
 ```
 
 ## license

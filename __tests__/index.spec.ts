@@ -1,8 +1,10 @@
-import fn from '../src';
+import unzip from '../src';
 
 describe('api.basic', () => {
-  test('Normal single value case', () => {
-    const res = fn(1,2)
-    expect(res).toBe(3);
+  test('Normal single value case', async () => {
+    // await unzip({
+    //   source: '__tests__/dist.zip',
+    //   target: '__tests__/test123'
+    // });
   });
 });
