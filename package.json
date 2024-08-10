@@ -1,23 +1,37 @@
 {
-  "name": "webkit-sassui-video-play",
-  "version": "0.0.0",
-  "description": "Video play icon for webkit sassui",
-  "homepage": "https://github.com/afeiship/webkit-sassui-video-play",
-  "author": {
-    "name": "afei",
-    "email": "1290657123@qq.com"
-  },
+  "name": "@jswork/unzip",
+  "version": "1.0.0",
+  "description": "unzip tools based on zip-lib.",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "global.d.ts"
+  ],
   "scripts": {
-    "build":"gulp"
+    "build": "tsup",
+    "test": "bun test",
+    "release": "release-it"
   },
-  "main":"dist/webkit-sassui-video-play.scss",
   "license": "MIT",
   "devDependencies": {
-    "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-load-plugins": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "yargs": "^4.7.1"
+    "@jswork/next": "^1.2.2",
+    "@jswork/rollup-banner": "^1.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^18.15.5",
+    "rollup": "^4.9.6",
+    "tslib": "^2.6.2",
+    "tsup": "^8.0.1",
+    "typescript": "^4.9.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "zip-lib": "^1.0.4"
   }
 }
