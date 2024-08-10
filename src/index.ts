@@ -1,4 +1,4 @@
-import zl, { IExtractOptions } from 'zip-lib';
+import { Unzip, IExtractOptions } from 'zip-lib';
 
 interface UnzipOptions {
   source: string;
@@ -9,7 +9,7 @@ interface UnzipOptions {
 
 const unzip = (inOptions: UnzipOptions) => {
   const { source, target, onEntry, zlOptions } = inOptions;
-  const unzip = new zl.Unzip({
+  const unzip = new Unzip({
     onEntry,
     ...zlOptions,
   });
