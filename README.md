@@ -15,6 +15,7 @@ npm install @jswork/unzip
 ```js
 import unzip from '@jswork/unzip';
 
+// will auto create target folder if not exists.
 await unzip({
   source: '__tests__/dist.zip',
   target: '__tests__/test123'
