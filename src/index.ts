@@ -4,14 +4,14 @@ interface UnzipOptions {
   source: string;
   target: string;
   onEntry?: IExtractOptions['onEntry'];
-  zipOptions?: Omit<IExtractOptions, 'onEntry'>;
+  zlOptions?: Omit<IExtractOptions, 'onEntry'>;
 }
 
 const unzip = (inOptions: UnzipOptions) => {
-  const { source, target, onEntry, ...rest } = inOptions;
+  const { source, target, onEntry, zlOptions } = inOptions;
   const unzip = new zl.Unzip({
     onEntry,
-    ...rest,
+    ...zlOptions,
   });
 
   return new Promise((resolve, reject) => {
